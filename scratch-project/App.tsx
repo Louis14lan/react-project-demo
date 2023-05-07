@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
 import { MemoChildAPP as ChildApp } from './ChildApp';
-import { OnBoarding } from './components/onboarding'
 import './App.css'
 
 function App() {
@@ -22,14 +19,9 @@ function App() {
   return (
     <>
       <div id='test' style={{margin: `${count * 10} px`}}>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        hello
       </div>
-      <h1>Vite + React</h1>
+      <h1>start from scratch</h1>
       <div className="card">
         <button onClick={handleClick}>
           count is {count}
@@ -41,8 +33,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      {/* <ChildApp count={count} text={text}/> */}
-      <OnBoarding />
+      <ChildApp count={count} text={text}/>
     </>
   )
 }

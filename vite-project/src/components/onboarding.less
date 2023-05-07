@@ -1,0 +1,123 @@
+.my-ai-boarding_container {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    position: relative;
+    --my-ai-circle-size: 110px;
+}
+
+.test {
+    position: absolute;
+    width: 140px;
+    height: 98px;
+    opacity: 0.55;
+    border-radius: 49px;
+    top: 21px;
+}
+
+.my-ai-boarding_white_blur {
+    position: absolute;
+    width: calc(20px + var(--my-ai-circle-size));
+    height: calc(20px + var(--my-ai-circle-size));
+    left: calc(50% - (20px + var(--my-ai-circle-size))/2);
+    top: calc(50% - (20px + var(--my-ai-circle-size))/2);
+    background: linear-gradient(90deg, rgba(244, 161, 78, 0.93) 10.84%, rgba(255, 142, 242, 0.93) 47%, rgba(96, 69, 255, 0.93) 98%);
+    filter: blur(1.23606px);
+    transform: matrix(-0.79, -0.62, 0.62, -0.79, 0, 0);
+    border-radius: calc((20px + var(--my-ai-circle-size))/2);
+    z-index: -1;
+}
+
+.my-ai-boarding_white {
+    position: absolute;
+    width: var(--my-ai-circle-size);
+    height: var(--my-ai-circle-size);
+    left: calc(50% - var(--my-ai-circle-size)/2);
+    top: calc(50% - var(--my-ai-circle-size)/2);
+    background: #FFFFFF;
+    border-radius: var(--my-ai-circle-size);
+    z-index: 3;
+}
+
+@keyframes identifier {
+    0% {
+        transform: rotate(-90deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(180px);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.myAI {
+    /* Input__value */
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 8px 12px;
+    gap: 4px;
+    
+    width: 400px;
+    height: 40px;
+    
+    /* udtoken/component/outlined/bg */
+    
+    background: #FFFFFF;
+    /* token/line/border-component
+    
+    可交互控件描边
+    */
+    border: 1px solid #D0D3D6;
+    border-radius: 6px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+/* Circular/Desktop/title-5 (16px Regular)
+
+用于标题性的 Tab
+*/
+font-family: 'Lark Circular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* AI/primary/content/default */
+
+background: linear-gradient(90.92deg, #4752E6 0%, #CF5ECF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
